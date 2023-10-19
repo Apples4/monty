@@ -17,7 +17,7 @@ void _push(stack_t **head, unsigned int line_no)
 	{
 		if (!isdigit(var_global.args[i]) && var_global.args[i] != '-')
 			push_err(line_no);
-				
+
 	}
 
 	j = atoi(var_global.args);

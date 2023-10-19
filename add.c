@@ -9,7 +9,7 @@
 void _add(stack_t **head, unsigned int line_no)
 {
 	stack_t *temp;
-	int sum = 0, i = 0;
+	int i = 0;
 
 	temp = (*head);
 
@@ -23,7 +23,6 @@ void _add(stack_t **head, unsigned int line_no)
 		add_err(line_no);
 
 	temp = (*head)->next;
-	sum = (*head)->n;
-	sum += temp->n;
+	temp->n += (*head)->;
 	_pop(head, line_no);
 }

@@ -2,7 +2,7 @@
 
 /**
  * exec_opcodes - function that selects the right function to execute
- * @opcode: opcode is passes
+ * @code: opcode is passes
  * Return: Pointer to function that executes a code
  */
 void (*exec_opcodes(char *code))(stack_t **head, unsigned int line_no)

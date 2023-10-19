@@ -1,7 +1,5 @@
 #include "monty.h"
 
-globals var_global;
-
 /**
  * free_global - function to free global variables
  * Return: Nothing

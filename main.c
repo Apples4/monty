@@ -1,6 +1,8 @@
 #define _POSIX_C_SOURCE 200809L
 #include "monty.h"
 
+globals var_global;
+
 /**
  * main - Entry point
  * @argc: number of arguments users input
