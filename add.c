@@ -23,6 +23,6 @@ void _add(stack_t **head, unsigned int line_no)
 		add_err(line_no);
 
 	temp = (*head)->next;
-	temp->n += (*head)->;
+	temp->n += (*head)->n;
 	_pop(head, line_no);
 }
