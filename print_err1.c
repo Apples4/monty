@@ -20,7 +20,6 @@ void push_err(unsigned int line_no)
 void node_err(void)
 {
 	fprintf(stderr, "Error: malloc failed\n");
-	free_global();
 	exit(EXIT_FAILURE);
 }
 
