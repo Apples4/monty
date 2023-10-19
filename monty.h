@@ -7,7 +7,6 @@
 #include <stdarg.h>
 #include <ctype.h>
 #include <stddef.h>
-#define _POSIX_C_SOURCE 200809L
 
 /* functions  and structs */
 /**
@@ -70,9 +69,9 @@ void _pop(stack_t **head, unsigned int line_no);
 void _add(stack_t **head, unsigned int line_no);
 void _swap(stack_t **head, unsigned int line_no);
 void _nop(stack_t **head, unsigned int line_no);
-
+void _sub(stack_t **head, unsigned int line_no);
 /* Execution functions */
-void (*exec_opcodes(char *code))(stack_t **head, unsigned int line_no);
+void (*exec_opcodes(char *opcode))(stack_t **head, unsigned int line_no);
 void intizlise_var(FILE *fd);
 FILE *check_user(int argc, char *argv[]);
 int main(int argc, char *argv[]);
@@ -98,6 +97,7 @@ void pint_err(unsigned int line_no);
 void pop_err(unsigned int line_no);
 void swap_err(unsigned int line_no);
 void add_err(unsigned int line_no);
+void sub_err(unsigned int line_no);
 void fd_err1(void);
 void fd_err2(char *argv[]);
 void fd_err3(char *input, int line_no);

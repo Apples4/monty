@@ -15,6 +15,7 @@ void (*exec_opcodes(char *code))(stack_t **head, unsigned int line_no)
 		{"swap", _swap},
 		{"add", _add},
 		{"nop", _nop},
+		{"sub", _sub},
 		{NULL, NULL},
 	};
 	int j = 0;
