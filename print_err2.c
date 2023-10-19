@@ -47,3 +47,16 @@ void fd_err3(char *input, int line_no)
 	free_global();
 	exit(EXIT_FAILURE);
 }
+
+/**
+ * sub_err: function to print error on sub function
+ * @line_no: line number
+ * Return: Nothing
+ */
+void sub_err(unsigned int line_no)
+{
+	fprintf(stderr, "L%u: ", line_no);
+	fprintf(stderr, "can't sub, stack too short\n");
+	free_global();
+	exit(EXIT_FAILURE);
+}

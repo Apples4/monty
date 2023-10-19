@@ -21,8 +21,8 @@ void _sub(stack_t **head, unsigned int line_no)
 
 	if (i < 2)
 		sub_err(line_no);
-	
+
 	temp = (*head)->next;
 	temp->n -= (*head)->n;
-	_pop(_pop(head, line_no);
+	_pop(head, line_no);
 }
